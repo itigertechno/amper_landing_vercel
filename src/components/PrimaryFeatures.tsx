@@ -14,7 +14,7 @@ import Img5 from '@/images/features/5.webp'
 
 const features = [
   {
-    title: 'Register your company with Tide for £14.99 £50',
+    title: 'Register your company with Ampere for £14.99 £50',
     description:
       'We’re an authorised agent of Companies House and will fund almost all of the incorporation fee for you.',
     image: Img1,
@@ -62,7 +62,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Tide makes registering a limited company easy
+            Ampere makes registering a limited company easy
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
             Well everything you need if you aren’t that picky about minor

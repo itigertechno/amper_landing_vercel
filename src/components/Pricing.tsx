@@ -7,12 +7,12 @@ const stats = [
   { id: 3, name: 'Business Savings Account', value: 'Free' },
   {
     id: 4,
-    name: 'Tide Accounting',
+    name: 'Ampere Accounting',
     value: '3 months free then £22.99/month',
   },
   {
     id: 5,
-    name: 'Tide Premium Plans',
+    name: 'Ampere Premium Plans',
     value: '3 months free then £22.99/month',
   },
   {
@@ -37,7 +37,7 @@ export function Pricing() {
               Our track record
             </h2>
             <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              Everything you get when you incorporate your business with Tide
+              Everything you get when you incorporate your business with Ampere
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores

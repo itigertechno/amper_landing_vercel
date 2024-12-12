@@ -18,8 +18,8 @@ export function CallToAction() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
             Get 3 months of Admin Extra for free when you open an account with
-            Tide. Send unlimited invoices, track business performance, handle
-            taxes, and do your banking - all from the Tide app. T&Cs apply.
+            Ampere. Send unlimited invoices, track business performance, handle
+            taxes, and do your banking - all from the Ampere app. T&Cs apply.
           </p>
           <Button color="primary" variant="solid" className="mt-10">
             Get 3 months free

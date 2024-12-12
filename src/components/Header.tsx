@@ -89,7 +89,7 @@ export function Header() {
       offset: 0,
       links: [
         {
-          title: 'Register with tide',
+          title: 'Register with Ampere',
           items: [
             { title: 'Company Registration', href: '#' },
             { title: 'Company Name Check', href: '#' },
@@ -118,7 +118,7 @@ export function Header() {
         {
           title: 'Features',
           items: [
-            { title: 'Switch to tide', href: '#' },
+            { title: 'Switch to Ampere', href: '#' },
             { title: 'International Payments', href: '#' },
             { title: 'Invoicing', href: '#' },
             { title: 'Accounting Integrations', href: '#' },
@@ -146,7 +146,7 @@ export function Header() {
         {
           title: 'Accounting',
           items: [
-            { title: 'Tide Accounting', href: '#' },
+            { title: 'Ampere Accounting', href: '#' },
             { title: 'Accounting Integrations', href: '#' },
           ],
         },

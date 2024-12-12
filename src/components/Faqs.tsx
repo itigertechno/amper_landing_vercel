@@ -6,13 +6,13 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does Tide register my business directly with Companies House?',
+      question: 'Does Ampere register my business directly with Companies House?',
       answer:
         'Yes. We’re an authorized formation agent of Companies House, and we’re securely integrated with them, so you can trust us to register your limited company.',
     },
     {
       question:
-        'How long does it take to register a limited company through Tide?',
+        'How long does it take to register a limited company through Ampere?',
       answer:
         'It depends. In many cases, Companies House will incorporate your company within 1 business day. The majority of businesses are incorporated within 48 hours. Please note that Companies House does not work on weekends so if you send an application on a Friday, it will take longer.',
     },

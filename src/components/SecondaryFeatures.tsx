@@ -39,10 +39,10 @@ export function SecondaryFeatures() {
             Deploy faster
           </h2>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-contrast-900 sm:text-5xl lg:text-balance">
-            Why use Tide&apos;s company formation service?
+            Why use Ampere&apos;s company formation service?
           </p>
           <p className="mt-6 text-lg/8 text-contrast-600">
-            Tide is here to support you in starting your own limited company. We
+            Ampere is here to support you in starting your own limited company. We
             believe the world would be a better place if more people gave it a
             shot – that’s why we’ve made company formations easier than ever.
           </p>
