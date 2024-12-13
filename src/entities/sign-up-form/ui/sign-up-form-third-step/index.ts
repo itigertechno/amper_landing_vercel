@@ -1,0 +1,1 @@
+export {SignUpFormThirdStep} from "./SignUpFormThirdStep";

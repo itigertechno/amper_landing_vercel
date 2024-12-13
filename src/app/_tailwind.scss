@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .border-r-aside {
+    border-right: 1px solid var(--tw-text-opacity);
+  }
+  .border-aside {
+    border: 1px solid var(--tw-text-opacity);
+  }
+
+  .border-primary {
+    border: .0625rem solid var(--color-primary);
+  }
+
+  .bg-notification-wrapper {
+    background: #dde8ff;
+  }
+
+  .tide-box-shadow {
+    box-shadow: 0 4px 14px #0000001a;
+  }
+
+  .text-color-link-standard {
+    color: var(--color-primary);
+  }
+
+  .text-color-secondary {
+    color: var(--color-secondary);
+  }
+  .text-color-standard {
+    color: var(--toastify-text-color-standard);
+  }
+
+  .bg-primary {
+    background: var(--color-primary);
+  }
+
+  .text-color-tertiary {
+    color: var(--toastify-text-color-light);
+  }
+
+  .color-gray-svg {
+    color: rgb(144, 149, 162);
+  }
+
+  .text-mat-sidenav-content-text-color {
+    color: var(--mat-sidenav-content-text-color);
+  }
+
+  .bg-color-main-background {
+    background: rgb(240, 244, 255);
+  }
+
+  .text-color-primary {
+    color: var(--color-primary);
+  }
+}

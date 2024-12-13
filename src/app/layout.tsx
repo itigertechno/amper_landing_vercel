@@ -1,45 +1,29 @@
-import { type Metadata } from 'next'
-import { Inter, Lexend } from 'next/font/google'
-import clsx from 'clsx'
+import type {PropsWithChildren} from 'react';
+import type {Metadata} from 'next';
+import {getLocale} from 'next-intl/server';
+import "./_reset.scss";
+import "./_index.scss";
+import {Figtree} from 'next/font/google'
 
-import '@/styles/tailwind.css'
+
+const openSans = Figtree({
+  subsets: ['latin'],
+  weight: ["400", "500", "600", "700", "800"],
+  display: 'swap',
+  variable: '--font-open-sans',
+})
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
-  },
-  description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
-}
+  title: 'Your Application Title Goes Here',
+  description: 'Your application description goes here',
+};
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
-const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({children}: PropsWithChildren) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        'h-full scroll-smooth text-base text-contrast-600 antialiased',
-        inter.variable,
-        lexend.variable,
-      )}
-    >
-      <body className="flex h-full flex-col">{children}</body>
+    <html className={openSans.variable}>
+    <body>
+    {children}
+    </body>
     </html>
-  )
+  );
 }

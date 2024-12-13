@@ -1,25 +1,18 @@
-import { Faqs } from '@/components/Faqs'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import {FooterCopy} from "@/components/FooterCopy";
+import { Home } from '@screens/home/Home';
+import { Footer } from '@widgets/footer';
+import { Header } from '@widgets/header';
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
-        {/*<CallToAction />*/}
-        <Faqs />
-        {/*<Steps />*/}
-        <Pricing />
-      </main>
-      <FooterCopy />
-    </>
-  )
+export default function Page() {
+	return (
+		<section className='flex flex-col h-full'>
+			<Header />
+
+			<div className='flex-auto min-h-[100vh]'>
+				<Home />
+			</div>
+			<div className='flex-initial'>
+				<Footer />
+			</div>
+		</section>
+	);
 }

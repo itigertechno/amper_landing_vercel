@@ -1,0 +1,190 @@
+@import "./tailwind";
+@import "./datepicker";
+
+:root {
+  --color-primary: #0b70f6;
+  --color-secondary: #0b70f6;
+
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: hsla(0, 0%, 100%, .7);
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+
+  --toastify-text-color-standard: #172743;
+  --toastify-text-color-light: #797979;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(90deg, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+
+}
+
+body {
+  font-family: var(--font-open-sans), sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.wrap {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body[data-locked=true] {
+  overflow: hidden;
+  height: 100%;
+}
+
+.iconCurrentFillPath > path {
+  fill: currentColor;
+}
+
+
+.iconCurrentFillRect > rect {
+  fill: currentColor;
+}
+
+
+.iconCurrentStrokeRect > rect {
+  stroke: currentColor;
+}
+
+
+.iconCurrentFillPathDeep path {
+  fill: currentColor;
+}
+
+.iconCurrentFillG > g {
+  fill: currentColor;
+}
+
+.iconCurrentFillPathFirst > path:first-of-type {
+  fill: currentColor;
+}
+
+.iconCurrentStrokeCircle > circle {
+  stroke: currentColor;
+}
+
+.iconCurrentStrokePath > path {
+  stroke: currentColor;
+}
+
+.iconCurrentEllipsePath > ellipse {
+  stroke: currentColor;
+}
+
+.iconCurrentStrokeG > g {
+  stroke: currentColor;
+}
+
+.after-absolute-f-size::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.absolute-center {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.with-after-full-size::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.capitalize-first-word {
+  display: block;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.w-250px {
+  width: 15.625rem;
+}
+
+.ml-250px {
+  margin-left: 15.625rem;
+}
+
+
+.is-active.splide__pagination__page  {
+  background: var(--color-primary) !important;
+}
+
+.slider-pagination__page {
+  width: 10px !important;
+  height: 10px !important;
+  background: #f6f8fc !important;
+  transform: none !important;
+  opacity: .8 !important;
+  border-radius: 50%;
+  transition: 150ms ease-in-out all !important;
+  position: relative !important;
+  z-index: 20 !important;
+}
+
+.slider-pagination__page.is-active {
+  width: 40px !important;
+  opacity: 1 !important;
+  border-radius: 4px;
+  background: #f6f8fc !important;
+}
+
+.splide__pagination {
+  z-index: 20 !important;
+}
+
+.introduction-gradient {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(24,39,68,1) 0%, rgba(0,0,0,.2) 100%);
+}
+
+
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 14px;
+  }
+}

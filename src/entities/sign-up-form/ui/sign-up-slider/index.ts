@@ -1,0 +1,1 @@
+export {SignUpSlider} from "./SignUpSlider";
