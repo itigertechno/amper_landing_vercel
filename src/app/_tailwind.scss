@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   .border-r-aside {
     border-right: 1px solid var(--tw-text-opacity);
   }
@@ -12,7 +11,7 @@
   }
 
   .border-primary {
-    border: .0625rem solid var(--color-primary);
+    border: 0.0625rem solid var(--color-primary);
   }
 
   .bg-notification-wrapper {
@@ -56,5 +55,36 @@
 
   .text-color-primary {
     color: var(--color-primary);
+  }
+
+  .accordion {
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    width: 26px;
+    height: 26px;
+    right: 6px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 4px;
+      background-color: var(--color-primary);
+      right: 4px;
+      top: 50%;
+      translate: 0 -50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 4px;
+      background-color: var(--color-primary);
+      rotate: 90deg;
+      right: 4px;
+      top: 50%;
+      translate: 0 -50%; 
+    }
   }
 }
